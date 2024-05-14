@@ -1,71 +1,154 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site sur le jeu vidéo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GameWave : Explorez l'univers du jeu</title>
+    <title></title>
+    <style>
+        /* Styles CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, violet, turquoise);
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Ajout d'un fond semi-transparent */
+            color: #fff;
+            padding: 10px;
+            /* Réduction de la taille du padding */
+            text-align: center;
+            /* Centrer le contenu */
+        }
+
+        header h1 {
+            font-size: 24px;
+            /* Réduction de la taille de la police */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            /* Centrer le contenu */
+        }
+
+        section h2 {
+            font-size: 20px;
+            /* Réduction de la taille de la police */
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Ajout d'un fond semi-transparent */
+            color: #fff;
+            text-align: center;
+            /* Centrer le contenu */
+            padding: 10px;
+            /* Réduction de la taille du padding */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 14px;
+            /* Réduction de la taille de la police */
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Mon Site sur le Jeu Vidéo</h1>
-    <nav>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#jeux">Jeux</a></li>
-            <li><a href="#actualites">Actualités</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>GameWave : Explorez l'univers du jeu</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="histoire">Histoire</a></li>
+                <li><a href="#nouveautes">Nouveautés</a></li>
+                <li><a href="#promotions">Promotions</a></li>
+                <li><a href="#inscription">Inscription</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="accueil">
-    <h2>Bienvenue sur notre site !</h2>
-    <p>Découvrez tout sur les jeux vidéo, des dernières nouveautés aux classiques incontournables.</p>
-</section>
+    <section id="accueil">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur notre site de marketing dédié aux jeux vidéo. Découvrez les dernières actualités, les
+            promotions exclusives et bien plus encore.</p>
+    </section>
 
-<section id="jeux">
-    <h2>Nos Jeux</h2>
-    <div class="jeu">
-        <img src="jeu1.jpg" alt="Jeu 1">
-        <h3>Jeu 1</h3>
-        <p>Description du jeu 1...</p>
-    </div>
-    <div class="jeu">
-        <img src="jeu2.jpg" alt="Jeu 2">
-        <h3>Jeu 2</h3>
-        <p>Description du jeu 2...</p>
-    </div>
-    <!-- Ajoutez plus de jeux selon vos besoins -->
-</section>
+    <section id="histoire">
+        <h2>Histoire</h2>
+        <p>Découvrez notre parcours dans l'industrie du jeu vidéo.</p>
 
-<section id="actualites">
-    <h2>Actualités</h2>
-    <article>
-        <h3>Titre de l'actualité 1</h3>
-        <p>Description de l'actualité 1...</p>
-    </article>
-    <article>
-        <h3>Titre de l'actualité 2</h3>
-        <p>Description de l'actualité 2...</p>
-    </article>
-    <!-- Ajoutez plus d'actualités selon vos besoins -->
-</section>
+        <section id="nouveautes">
+            <h2>Nouveautés</h2>
+            <p>Découvrez les derniers jeux vidéo qui font sensation.</p>
+            <div class="nouveautes-liste">
+                <!-- Insérer ici la liste des nouveaux jeux -->
+                <ul>
+                    <li>Nouveau jeu 1</li>
+                    <li>Nouveau jeu 2</li>
+                    <li>Nouveau jeu 3</li>
+                    <li>nouveau jeu 4</li>
+                </ul>
+            </div>
+        </section>
 
-<footer id="contact">
-    <h2>Contactez-nous</h2>
-    <p>Pour toute question ou suggestion, n'hésitez pas à nous contacter :</p>
-    <form action="envoyer_message.php" method="post">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Envoyer</button>
-    </form>
-</footer>
+        <section id="promotions">
+            <h2>Promotions</h2>
+            <p>Profitez de nos offres spéciales sur les jeux vidéo.</p>
+            <div class="promotions-liste">
+                <!-- Insérer ici la liste des promotions -->
+                <ul>
+                    <li>Promotion jeu 1</li>
+                    <li>Promotion jeu 2</li>
+                    <li>Promotion jeu 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="inscription">
+            <h2>Inscription</h2>
+            <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres spéciales directement
+                dans votre boîte de réception.</p>
+            <form action="votre_script_de_traitement.php" method="post">
+                <input type="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+                <input type="submit" value="S'inscrire">
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Nous contacter pour toute question ou demande d'information.</p>
+            <!-- Insérer ici le formulaire de contact -->
+        </section>
+
+        <footer>
+            <p>&copy; 2024 GameWave : Explorez l'univers du jeu</p>
+        </footer>
 
 </body>
+
 </html>
